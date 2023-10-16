@@ -1,0 +1,163 @@
+header{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+}
+header p{
+    color: aliceblue;
+    padding-left: 240px;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.block{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 50px;  
+}
+.block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.block .info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-size: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.block:nth-child(2){
+    top:-15px;
+} 
+.block:hover .info{
+    background-color: rgba(123, 28, 212, 0.218);
+    color: rgb(228, 99, 120);
+    left: 20px;
+    font-size: 17px;
+}
+.block-wrapper{
+    background-color: hotpink;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.block-wrapper:hover{
+    background-color: cornflowerblue;  
+}
+.animation{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* background-color: black; */
+    animation-name: myMove;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* .animation img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    /* position: relative; */
+    /* animation-name: irakli;
+    background-size:cover; */
+/* } */
+/* @keyframes irakli{
+    from {
+        left: 0;
+        top: 0;
+        transform:rotate(-30deg);
+    }
+    50%{
+        width: 100%;
+        height: 100%;
+    }
+    to{
+        left: 100%;
+        top: 100%;
+        border-radius: 50%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        transform:rotate(-130deg)
+    } */
+  
+/* }  */
+@keyframes myMove {
+    from {
+        background-color: rgb(127, 223, 86);
+        left: 0;
+        top: 0;
+        transform:rotate(-30deg);
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(220, 206, 7);
+    }
+    to{
+        background-color: rgb(255, 0, 38);
+        left: 500px;
+        top: 500px;
+        border-radius: 50%;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        transform:rotate(-130deg)
+    }
+}
+.animation2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* background-color: black; */
+    animation-name: myMove2;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes myMove2 {
+    from {
+        background-color: rgb(127, 223, 86);
+        right: 0;
+        top: 0;
+        transform:rotate(-30deg);
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(220, 206, 7);
+    }
+    to{
+        background-color: rgb(255, 0, 38);
+        right: 500px;
+        top: 500px;
+        border-radius: 50%;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        transform:rotate(-130deg)
+    }
+}
